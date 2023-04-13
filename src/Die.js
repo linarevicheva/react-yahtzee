@@ -15,7 +15,7 @@ class Die extends Component {
 
   render() {
     const {numberWords, locked, val, disabled} = this.props;
-    let classes = `fa-solid fa-dice-${numberWords[val - 1]} fa-5x `;
+    let classes = `Die fa-solid fa-dice-${numberWords[val - 1]} fa-5x `;
     if (locked) classes += "Die-locked";
     return (
       <i
